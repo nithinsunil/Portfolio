@@ -3,11 +3,19 @@ import 'tailwindcss/tailwind.css';
 import email from '../assets/email.png';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Portfolio from './Portfolio';
 
 function Navbar() {
+  const onHandleScroll = (time) => {
+    window.scrollTo({
+      top: time,
+      behavior: 'smooth',
+    });
+  };
   return (
-    <div className='shadow-lg'>
-      <div className='nav flex justify-between ml-6 mr-6 mt-6'>
+    <div className='shadow-lg sticky top-0 bg-slate-200 bg-opacity-80 backdrop-blur-sm'>
+      <div className='nav flex justify-between ml-6 mr-6 p-4'>
         <div className='text-2xl  '>
           <span className='name tracking-widest'>Nithin</span>
         </div>
@@ -36,18 +44,39 @@ function Navbar() {
         lg:links lg:flex lg:justify-evenly lg:mr-8 lg:tracking-widest lg:w-2/5 lg:text-lg
         md:links md:flex md:justify-evenly md:mr-8 md:tracking-widest md:w-2/5 md:text-lg'
         >
-          <a href='/'>
-            <div>Home</div>
-          </a>
-          <a href='/'>
-            <div>About</div>
-          </a>
-          <a href='/'>
-            <div>Portfolio</div>
-          </a>
-          <a href='/'>
-            <div>Contact</div>
-          </a>
+          <Router>
+            <Link
+              onClick={() => {
+                onHandleScroll(0);
+              }}
+            >
+              <div>Home</div>
+            </Link>
+            <Link
+              onClick={() => {
+                onHandleScroll(650);
+              }}
+            >
+              <div>About</div>
+            </Link>
+            <Link
+              onClick={() => {
+                onHandleScroll(1310);
+              }}
+            >
+              <div>Portfolio</div>
+            </Link>
+            <Link
+              onClick={() => {
+                onHandleScroll(2000);
+              }}
+            >
+              <div>Contact</div>
+            </Link>
+            <Routes>
+              <Route path='/portfolio' component={Portfolio} />
+            </Routes>
+          </Router>
         </div>
       </div>
     </div>

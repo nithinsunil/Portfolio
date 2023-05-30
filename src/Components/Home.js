@@ -1,7 +1,4 @@
 import React from 'react';
-// import email from '../assets/email.png';
-// import linkedin from '../assets/linkedin.png';
-// import github from '../assets/github.png';
 import avatar from '../assets/nithin.png';
 
 function Home() {
@@ -12,34 +9,6 @@ function Home() {
         <div className='flex mx-auto h-1/2 w-4/5 md:justify-center md:w-4/5 md:mx-0'>
           <img src={avatar} alt='Avatar' />
         </div>
-        {/* <div className='flex w-48 mx-24 justify-between'>
-          <div>
-            <button className='w-8'>
-              <a href='mailto:nithinsunil55@gmail.com' target='blank'>
-                <img src={email} alt='E-mail' />
-              </a>
-            </button>
-          </div>
-          <div>
-            <button className='w-8'>
-              {' '}
-              <a href='https://github.com/nithinsunil' target='blank'>
-                <img src={github} alt='Github' />
-              </a>
-            </button>
-          </div>
-          <div>
-            <button className='w-8'>
-              {' '}
-              <a
-                href='https://www.linkedin.com/in/nithin-s-b3764820b/'
-                target='blank'
-              >
-                <img src={linkedin} alt='LinkedIn' />
-              </a>
-            </button>
-          </div>
-        </div> */}
         <div className='flex justify-center md:w-4/5 mt-8'>
           <button className='w-24 h-8 text-white bg-green-500 hover:bg-green-400 rounded-md'>
             Resume
