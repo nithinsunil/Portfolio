@@ -13,6 +13,30 @@ function Navbar() {
       behavior: 'smooth',
     });
   };
+  const getScreenSize = (linkName) => {
+    let screen = window.innerWidth;
+    console.log(screen);
+    // scroll values for medium size screens
+    if (screen > 768 && screen < 1024) {
+      if (linkName === 'about') {
+        return 650;
+      } else if (linkName === 'portfolio') {
+        return 1310;
+      } else if (linkName === 'contact') {
+        return 2000;
+      }
+    }
+    // scroll values for screens bigger than medium size
+    else if (screen > 1024) {
+      if (linkName === 'about') {
+        return 950;
+      } else if (linkName === 'portfolio') {
+        return 1410;
+      } else if (linkName === 'contact') {
+        return 2000;
+      }
+    }
+  };
   return (
     <div className='shadow-lg sticky top-0 bg-slate-200 bg-opacity-80 backdrop-blur-sm'>
       <div className='nav flex justify-between ml-6 mr-6 p-4'>
@@ -54,21 +78,21 @@ function Navbar() {
             </Link>
             <Link
               onClick={() => {
-                onHandleScroll(650);
+                onHandleScroll(getScreenSize('about'));
               }}
             >
               <div>About</div>
             </Link>
             <Link
               onClick={() => {
-                onHandleScroll(1310);
+                onHandleScroll(getScreenSize('portfolio'));
               }}
             >
               <div>Portfolio</div>
             </Link>
             <Link
               onClick={() => {
-                onHandleScroll(2000);
+                onHandleScroll(getScreenSize('contact'));
               }}
             >
               <div>Contact</div>
