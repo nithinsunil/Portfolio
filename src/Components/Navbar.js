@@ -15,13 +15,12 @@ function Navbar() {
   };
   const getScreenSize = (linkName) => {
     let screen = window.innerWidth;
-    console.log(screen);
     // scroll values for medium size screens
     if (screen > 768 && screen < 1024) {
       if (linkName === 'about') {
         return 650;
       } else if (linkName === 'portfolio') {
-        return 1310;
+        return 1450;
       } else if (linkName === 'contact') {
         return 2000;
       }
@@ -31,7 +30,7 @@ function Navbar() {
       if (linkName === 'about') {
         return 950;
       } else if (linkName === 'portfolio') {
-        return 1410;
+        return 1600;
       } else if (linkName === 'contact') {
         return 2000;
       }

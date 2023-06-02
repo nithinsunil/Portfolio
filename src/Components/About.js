@@ -8,7 +8,7 @@ function About() {
         <h2 className='font-bold text-3xl'>About Me</h2>
       </div>
       {/* w-1/2 grid place-items-center */}
-      <div className='mt-6'>
+      <div className='mt-6 lg:w-1/2 md:w-3/4 mx-auto'>
         {/* w-1/2 */}
         <p>
           {' '}
@@ -21,30 +21,30 @@ function About() {
         </p>{' '}
         <br />
         <p>
-          My journey as a web developer began with a deep fascination for
-          crafting interactive and visually appealing websites. Over the years,
-          I have honed my skills and gained experience in building robust and
-          user-friendly web applications. I thrive in dynamic and collaborative
-          environments, where I can contribute my creative problem-solving
-          abilities and attention to detail.
+          During my time as a UI developer, I have gained expertise in several
+          key technologies, including HTML, CSS, JavaScript, React.js, and
+          Tailwind CSS. These tools have allowed me to create visually appealing
+          and highly functional websites and web applications. I am constantly
+          expanding my skill set and staying up-to-date with the latest industry
+          trends to ensure that I can deliver modern and innovative solutions.
         </p>{' '}
         <br />
         <p>
-          Combining my technical expertise with a passion for delivering
-          high-quality code, I consistently strive for excellence in every
-          project I undertake. I am dedicated to creating clean and maintainable
-          code, ensuring optimal performance and scalability. With a strong
-          commitment to continuous learning and a drive to embrace new
-          technologies, I am excited to tackle new challenges and contribute to
-          innovative web solutions. <br />
+          Collaboration is at the heart of my work philosophy. I thrive in a
+          team environment, where I can contribute my skills and learn from
+          others. I value effective communication and believe that open and
+          transparent collaboration leads to the best outcomes. I enjoy working
+          closely with designers, project managers, and other stakeholders to
+          ensure that the final product exceeds expectations.
+          <br />
         </p>{' '}
         <br />
         <p>
-          If you are looking for a web developer who is not only proficient in
-          JavaScript, React.js, Next.js, and Vue.js but also possesses a strong
-          work ethic, attention to detail, and a genuine passion for creating
-          outstanding web experiences, I would love to connect and explore
-          potential opportunities together.
+          If you're looking for a dedicated and motivated team member who is
+          passionate about crafting exceptional web experiences, I would love to
+          hear from you. Please feel free to browse through my portfolio and
+          explore some of the projects I've worked on. Thank you for taking the
+          time to visit, and I look forward to connecting with you soon!
         </p>
       </div>
     </div>
